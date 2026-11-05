@@ -1,0 +1,81 @@
+
+<!-- ========================================
+     SECURITYMASTER INTELLIGENCE
+     AUDITORIA OPERACIONAL
+     Layout padronizado
+======================================== -->
+
+<section class="modulo-provisorio auditoria">
+
+    <!-- CABEÇALHO -->
+
+    <div class="modulo-provisorio-cabecalho">
+
+        <span class="modulo-provisorio-icone">
+            📋
+        </span>
+
+        <h2>
+            Auditoria Operacional
+        </h2>
+
+    </div>
+
+    <!-- DESCRIÇÃO -->
+
+    <p class="modulo-provisorio-descricao">
+        Importe o relatório HTML de ocorrências
+        exportado do Moni para iniciar a análise
+        dos atendimentos da central.
+    </p>
+
+    <!-- PAINEL DE IMPORTAÇÃO -->
+
+    <div class="rondas-painel-importacao importacao-auditoria">
+
+        <h3>
+            Importação de relatório
+        </h3>
+
+        <p>
+            Selecione o relatório HTML exportado pelo sistema.
+        </p>
+
+        <!-- SELEÇÃO DO ARQUIVO -->
+
+        <input
+            type="file"
+            id="arquivoOcorrencias"
+            accept=".html,.htm,text/html"
+            aria-label="Selecione o relatório HTML de ocorrências"
+            style="
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                margin: 18px 0;
+                box-sizing: border-box;
+            "
+        >
+
+        <!-- BOTÃO DE ANÁLISE -->
+
+        <button
+            type="button"
+            id="btnImportarOcorrencias"
+            class="rondas-botao"
+            style="
+                display: block;
+                margin-top: 12px;
+            "
+        >
+            Analisar ocorrências
+        </button>
+
+    </div>
+
+    <!-- RESULTADOS DA AUDITORIA -->
+    <!-- Mantido para funcionamento do JavaScript -->
+
+    <div id="resultadoAuditoria"></div>
+
+</section>

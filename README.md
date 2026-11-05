@@ -1,40 +1,57 @@
 # SecurityMaster Intelligence
 
-## Sobre o projeto
+## Objetivo
 
-O SecurityMaster Intelligence é uma plataforma web desenvolvida para transformar os relatórios do sistema Moni em dashboards inteligentes, indicadores operacionais e relatórios personalizados.
+Plataforma para análise inteligente dos relatórios exportados pelo Moni.
 
-O objetivo é facilitar a análise das informações dos clientes, eventos e serviços prestados pela Security Master.
+### Funcionalidades planejadas
 
----
+### Cadastros
+- Clientes ativos por cidade
+- Clientes ativos por bairro
+- Clientes por situação (Ativo, Suspenso e Cancelado)
+- Clientes sem palavra-chave
+- Clientes com palavra-chave
+- Clientes com horário de alarme desarmado
+- Clientes com setor Pânico
+- Clientes com providências
+- Clientes sem responsável
+- Clientes com bilhetes
+- Clientes por fabricante
+- Clientes por tipo
 
-## Status
+### Eventos
+- Eventos por tipo
+- Eventos por cliente
+- Eventos por horário
+- Eventos por operador
 
-🚧 Projeto em desenvolvimento
+## Estrutura do projeto
 
----
+```
+public/
+src/
+ ├── assets/
+ ├── components/
+ ├── css/
+ ├── data/
+ ├── database/
+ ├── js/
+ ├── services/
+ └── utils/
+docs/
+```
 
-## Tecnologias
+## Fluxo da aplicação
 
-- HTML5
-- CSS3
-- JavaScript
-- Git
-- GitHub
-
----
-
-## Desenvolvedor
-
-Anderson Rogério
-
----
-
-## Objetivos da primeira versão
-
-- Dashboard de indicadores
-- Cadastro de clientes
-- Importação de relatórios HTML
-- Ranking de eventos
-- Estatísticas por cliente
-- Relatórios personalizados
+```
+Arquivo HTML
+      ↓
+Importador
+      ↓
+Parser
+      ↓
+Banco de Dados
+      ↓
+Dashboard
+```
